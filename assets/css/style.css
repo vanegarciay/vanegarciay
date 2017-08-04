@@ -156,4 +156,66 @@ body {
     font-size: 4em;
     margin-left: 8em; }
 
+/* Conozco de */
+.conozco {
+  padding: 2em; }
+  .conozco__title {
+    font-family: "Raleway", sans-serif;
+    color: #40D9BD;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 1.5em; }
+  .conozco__parrafo {
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 1em; }
+  .conozco .single_herramienta {
+    width: 50%; }
+
+/* Portafolio */
+#portafolio {
+  background-color: rgba(64, 217, 189, 0.5); }
+  #portafolio .img-hover {
+    position: relative;
+    padding: 2em; }
+  #portafolio .design_items {
+    height: 30%; }
+  #portafolio img {
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-decoration: none;
+    overflow: visible;
+    transition: all 150ms linear; }
+  #portafolio .img-text {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: -1;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Poiret One", cursive;
+    font-weight: bold; }
+  #portafolio .img-text a {
+    font-size: 1.5em;
+    color: #40D9BD;
+    font-family: "Poiret One", cursive;
+    font-weight: bold; }
+  #portafolio .tag {
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 5px;
+    font-size: 0.7em; }
+  #portafolio .img-hover:hover img {
+    filter: brightness(50%); }
+  #portafolio .img-hover:hover .img-text {
+    z-index: 9; }
+
 /*# sourceMappingURL=style.css.map */

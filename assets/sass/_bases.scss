@@ -196,3 +196,90 @@ body {
     }
 }
 
+/* Conozco de */
+
+.conozco {
+
+    padding: 2em;
+
+    &__title {
+        font-family: $tipografia_title;
+        color: $subtitle_color;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding: 1.5em;
+    }
+
+    &__parrafo {
+        font-family: $tipografia_contenido;
+        font-weight: bold;
+        font-size: 1.3em;
+        padding: 1em;
+    }
+
+    .single_herramienta {
+        width: 50%;
+    }
+}
+
+/* Portafolio */
+#portafolio {
+    background-color: rgba(64, 217, 189, 0.5);
+    .img-hover {
+        position: relative;
+        padding: 2em;
+    }
+
+    .design_items {
+        height: 30%;
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+        border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        text-decoration: none;
+        overflow: visible;
+        transition: all 150ms linear;
+    }
+
+    .img-text {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        z-index: -1;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-family: $tipografia_contenido;
+        font-weight: bold;
+    }
+
+    .img-text a {
+        font-size: 1.5em;
+        color: $subtitle_color;
+        font-family: $tipografia_contenido;
+        font-weight: bold;
+    }
+
+    .tag {
+        text-transform: uppercase;
+        background-color: #fff;
+        border-radius: 1em;
+        padding: 5px;
+        font-size: 0.7em;
+    }
+
+    .img-hover:hover img {
+        filter: brightness(50%);
+    }
+
+    .img-hover:hover .img-text {
+        z-index: 9;
+    }
+}
+
