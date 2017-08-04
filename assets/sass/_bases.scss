@@ -2,3 +2,197 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background: $title_color;
+}
+
+/* Contenedor General*/
+
+#contenedor-general {
+    margin: 0 auto;
+    margin-top: -10em;
+    background-color: #fff;
+    position: relative;
+    z-index: 999;
+    border-radius: 0.5em;
+    width: 95%;
+    max-width: none;
+    box-shadow: 0 1px 1em #777;
+}
+
+/*Separador*/
+.separador_izquierdo i.fa {
+        color: $subtitle_color;
+        float: left;
+        margin-top: -27px;
+    }
+
+    .separador_izquierdo hr {
+        width: 50%;
+        margin-left: 1em;
+        border-color: $subtitle_color;
+    }
+
+.separador_derecho i.fa {
+        color: $title_color;
+        float: left;
+        margin-top: -27px;
+    }
+
+    .separador_derecho hr {
+        width: 50%;
+        margin-left: 1em;
+        border-color: $title_color;
+    }
+
+
+/*Navbar*/
+.navbar-default {
+
+    background: rgba(255, 255, 255, 0.4);
+    .navbar-brand {
+        color: $subtitle_color;
+        font-weight: $negrita;
+    }
+
+    #menu-mobile ul li a {
+        color: $subtitle_color;
+        font-weight: $negrita;
+    }
+}
+
+.navbar{
+    font-family: $tipografia_title;
+    border-bottom: $nothing;
+
+    &__logo {
+        font-family: 'Londrina Shadow', cursive;
+        font-size: 2.5em;
+    }
+}
+
+/*bienvenida*/
+
+.bienvenida {
+    height: 80vh;
+    background-image: url("../img/yo.jpg");
+    background-size: cover;
+    filter: grayscale(70%);
+    margin-top: -20px;
+    text-align: center;
+    padding-top:10em;
+    font-family: 'Archivo Black', sans-serif;
+    z-index: 1;
+}
+
+.typewrite {
+    color: $title_color;
+    text-decoration: none!important;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.typewrite:hover {
+    color: $subtitle_color;
+    font-weight: bold;
+    font-size: 3em;
+    transition: font-size 2s;
+}
+
+/*About*/
+
+.aboutme {
+    margin-top: 6em;
+
+    &__foto {
+        /*width: 40%;
+        border: 4px solid $lila;
+        */
+        /*margin: 2em;
+        width: 20em;
+        margin-left: 8em;
+        height: 25em;
+        background-color: $title_color;
+        -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        background-position: right top;*/
+        height: 30%;
+        width: 30%;
+        margin: 30px;
+        margin-left: 10em;
+    }
+
+    &__title {
+        color: $subtitle_color;
+        font-family: $tipografia_title;
+        font-weight: $negrita;
+    }
+
+    &__parrafo {
+        font-family: $tipografia_contenido;
+    }
+
+    &__contain {
+        padding: 4em 5em 4em 0;
+    }
+}
+
+/* Habilidades */
+
+.habilidades {
+    height: 80vh;
+    background-image: url("../img/paisaje.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__title {
+        color: $title_color;
+        font-family: $tipografia_title;
+        font-weight: $negrita;
+        font-size: 2em;
+    }
+
+    &__subtitle {
+        font-family: $tipografia_contenido;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    &__skill {
+
+        b {
+            float: left;
+            overflow: hidden;
+            position: relative;
+            height: 50px;
+        }
+
+        span1 {
+            display: inline-block;
+            color: $title_color;
+            position: relative;
+            white-space: nowrap;
+            top: 0;
+            left: 0;
+            -webkit-animation: move 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-delay: 1s;
+        }
+
+        @keyframes move {
+            0% { top: 0px; }
+            20% { top: -50px; }
+            40% { top: -100px; }
+            60% { top: -150px; }
+            80% { top: -200px; }
+        }
+    }
+
+    &__single {
+        font-size: 4em;
+        margin-left: 8em;
+    }
+}
+
