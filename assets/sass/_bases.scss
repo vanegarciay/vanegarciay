@@ -285,16 +285,35 @@ body {
 
 /* Footer */
 
-#contacto {
+.contact {
     background: url("../img/tablas2.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 60vh;
-}
+    height: auto;
 
-#map {
+    #map {
     height: 100%;
     width: 100%;
     min-width: 300px;
     min-height: 300px;
+    repeat: no-repeat;
+    }
+
+    &__icon , &__parrafo {
+        font-family: $tipografia_title;
+        color: $title_color;
+        text-align: center;
+        font-size: 2.2em;
+        font-weight: bold;
+    }
+
+    &__credits {
+        color: #fff;
+        font-family: $tipografia_contenido;
+    }
+
+    &__hablemos {
+        color: #fff;
+    }
 }
+

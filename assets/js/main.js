@@ -62,8 +62,8 @@ $( document ).ready(function() {
 function map() {
     var latitud = -33.4724728;
     var longitud = -70.9100251;
-    var latitudColombia = 4.0645373;
-    var longitudColombia = -81.9850681;
+    var latitudColombia = 4.6482837;
+    var longitudColombia = -74.2478955;
 
     var map = new google.maps.Map(document.getElementById("map"),{
         zoom: 2,
@@ -81,6 +81,13 @@ function map() {
         scaledSize: new google.maps.Size(35, 35)
     };
 
+    var markerColombia = new google.maps.Marker({
+        map: map,
+        animation: google.maps.Animation.DROP,
+        icon: icono,
+        anchorPoint: new google.maps.Point(0, -29)
+    });
+
     var marker = new google.maps.Marker({
         map: map,
         animation: google.maps.Animation.DROP,
@@ -89,5 +96,5 @@ function map() {
     });
 
     marker.setPosition(new google.maps.LatLng(latitud,longitud));
-    marker.setPosition(new google.maps.LatLng(latitudColombia,longitudColombia));
+    markerColombia.setPosition(new google.maps.LatLng(latitudColombia,longitudColombia));
 }

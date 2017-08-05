@@ -42,7 +42,6 @@
     </nav>
     <!-- Bienvenida -->
     <section class="bienvenida">
-        <div id="particles-js">
             <div class="container">
                 <div class="row">
                     <h1>
@@ -52,7 +51,6 @@
                     </h1>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Acerca de mí-->
     <div id="contenedor-general">
@@ -295,24 +293,102 @@
         </section>
         <!-- Que hago-->
         <section id="quehago">
-            <div class="container">
+            <div class="container-fliud">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Que hago</h1>
-                        <p>Aqui van mis actividades y lo que me gusta</p>
+                    <div id="carousel-events" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-events" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-events" data-slide-to="1"></li>
+                            <li data-target="#carousel-events" data-slide-to="2"></li>
+                            <li data-target="#carousel-events" data-slide-to="3"></li>
+                            <li data-target="#carousel-events" data-slide-to="4"></li>
+                            <li data-target="#carousel-events" data-slide-to="5"></li>
+                            <li data-target="#carousel-events" data-slide-to="6"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="assets/img/agilesecuador.jpg" alt="imagen grupal del evento agiles en Ecuador">
+                                <div class="carousel-caption">
+                                <h3>Agiles Ecuador 2016</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/agilegirls.jpg" alt="imagen de charla en el Agil Open Camp">
+                                <div class="carousel-caption">
+                                <h3>Ponencia en el AOC Chile "Dolores en Scrum"</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/aoc.jpg" alt="imagen grupal del evento Agile Open Camp Chile">
+                                <div class="carousel-caption">
+                                <h3>Agile Open Camp 2017</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/co-creacionarticulo.jpg" alt="foto en el picnic de las Agile Girls">
+                                <div class="carousel-caption">
+                                <h3>Facilitando el picnic Agile Girls</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/continuosintegration.jpeg" alt="foto en el codin dojo de integracion continua">
+                                <div class="carousel-caption">
+                                <h3>Codin Dojo Continus Intregration</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/gati.jpg" alt="foto con un gato">
+                                <div class="carousel-caption">
+                                <h3>Voluntariado en Fundacion Adopta</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/laboratoria.jpg" alt="foto del salon de clases en laboratoria">
+                                <div class="carousel-caption">
+                                <h3>Laboratorians</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-events" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-events" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- footer-->
-        <footer id="contacto">
+        <footer id="contacto" class="contact">
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-md-12 contact__hablemos">
+                        <div class="col-md-6">
+                            <h1 class="center">Hablemos</h1>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i> +56984900988</p>
+                            <p><i class="fa fa-envelope-open" aria-hidden="true"></i> vanegarciay@gmail.com</p>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn-floating blue" target="_blank" href="https://www.linkedin.com/in/vanegarciay/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a class="btn-floating blue" target="_blank" href="https://github.com/vanegarciay"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-12">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>Estoy en Santiago de Chile</p>
+                        <p class="contact__parrafo"><i class="fa fa-map-marker contact__icon" aria-hidden="true"></i> Estoy en Santiago de Chile (Soy de Colombia)</p>
                         <!-- Aqui va nuestro mapa -->
                         <div id="map"></div>
+                        <hr>
+                        <p class="center contact__credits">Desarrollado por Vanessa Garcia Yara <i class="fa fa-angellist" aria-hidden="true"></i></p>
                     </div>
                 </div>
             </div>
