@@ -5,6 +5,12 @@
 
 body {
     background: $title_color;
+    position: relative;
+}
+
+h2 {
+    padding: 1em;
+    font-family: $tipografia_title;
 }
 
 /* Contenedor General*/
@@ -49,8 +55,8 @@ body {
 
 /*Navbar*/
 .navbar-default {
+    background: rgba(255, 255, 255, 1);
 
-    background: rgba(255, 255, 255, 0.4);
     .navbar-brand {
         color: $subtitle_color;
         font-weight: $negrita;
@@ -59,6 +65,7 @@ body {
     #menu-mobile ul li a {
         color: $subtitle_color;
         font-weight: $negrita;
+        font-size: 1.2em;
     }
 }
 
@@ -70,12 +77,22 @@ body {
         font-family: 'Londrina Shadow', cursive;
         font-size: 2.5em;
     }
+
+    &--transparent {
+        background: transparent !important;
+        box-shadow: none;
+        transition: 1s;
+    }
+    
+    &--transparent a {
+        color: $title_color !important;
+    }
 }
 
 /*bienvenida*/
 
 .bienvenida {
-    height: 80vh;
+    height: 90vh;
     background-image: url("../img/yo.jpg");
     background-size: cover;
     filter: grayscale(70%);
@@ -132,6 +149,9 @@ body {
 
     &__parrafo {
         font-family: $tipografia_contenido;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: justify;
     }
 
     &__contain {
@@ -283,20 +303,42 @@ body {
     }
 }
 
+/* Que hago */
+
+.quehago {
+    height: 90vh;
+
+    .carousel {
+        height: 70vh;
+
+        .carousel-caption {
+            position: absolute;
+            bottom: auto;
+            top: 0 !important;
+        }
+    }
+
+    img {
+        width: 100%;
+        filter: saturate(1.5);
+    }
+}
+
 /* Footer */
 
 .contact {
     background: url("../img/tablas2.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: auto;
+    height: 90vh;
+    background: $title_color;
 
     #map {
-    height: 100%;
-    width: 100%;
-    min-width: 300px;
-    min-height: 300px;
-    repeat: no-repeat;
+        height: 40vh;
+        width: 100%;
+        min-width: 300px;
+        min-height: 300px;
+        repeat: no-repeat;
     }
 
     &__icon , &__parrafo {
@@ -307,13 +349,17 @@ body {
         font-weight: bold;
     }
 
+    &__hablemos {
+        color: #fff;
+        height: 40vh;
+    }
+
     &__credits {
         color: #fff;
         font-family: $tipografia_contenido;
-    }
-
-    &__hablemos {
-        color: #fff;
+        background: $title_color;
+        height: 10vh;
+        padding: 2em;
     }
 }
 

@@ -59,6 +59,9 @@ $( document ).ready(function() {
     map();
 });
 
+/*
+ * Mapa
+ */
 function map() {
     var latitud = -33.4724728;
     var longitud = -70.9100251;
@@ -98,3 +101,20 @@ function map() {
     marker.setPosition(new google.maps.LatLng(latitud,longitud));
     markerColombia.setPosition(new google.maps.LatLng(latitudColombia,longitudColombia));
 }
+
+// Scrollspy
+$('body').scrollspy({ target: '.navbar' });
+
+/*
+ * Scroll variations
+ */
+
+
+$(window).scroll(function() {
+    /*$("span").css("display", "inline").fadeOut("slow");*/
+    if($(window).scrollTop() > 100) {
+        $(".navbar").removeClass('navbar--transparent');
+    } else {
+        $(".navbar").addClass('navbar--transparent');
+    }
+});

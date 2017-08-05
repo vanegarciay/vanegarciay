@@ -6,7 +6,12 @@
   padding: 0; }
 
 body {
-  background: #235764; }
+  background: #235764;
+  position: relative; }
+
+h2 {
+  padding: 1em;
+  font-family: "Raleway", sans-serif; }
 
 /* Contenedor General*/
 #contenedor-general {
@@ -43,13 +48,14 @@ body {
 
 /*Navbar*/
 .navbar-default {
-  background: rgba(255, 255, 255, 0.4); }
+  background: white; }
   .navbar-default .navbar-brand {
     color: #40D9BD;
     font-weight: bold; }
   .navbar-default #menu-mobile ul li a {
     color: #40D9BD;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.2em; }
 
 .navbar {
   font-family: "Raleway", sans-serif;
@@ -57,10 +63,16 @@ body {
   .navbar__logo {
     font-family: 'Londrina Shadow', cursive;
     font-size: 2.5em; }
+  .navbar--transparent {
+    background: transparent !important;
+    box-shadow: none;
+    transition: 1s; }
+  .navbar--transparent a {
+    color: #235764 !important; }
 
 /*bienvenida*/
 .bienvenida {
-  height: 80vh;
+  height: 90vh;
   background-image: url("../img/yo.jpg");
   background-size: cover;
   filter: grayscale(70%);
@@ -107,7 +119,10 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: bold; }
   .aboutme__parrafo {
-    font-family: "Poiret One", cursive; }
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: justify; }
   .aboutme__contain {
     padding: 4em 5em 4em 0; }
 
@@ -218,14 +233,28 @@ body {
   #portafolio .img-hover:hover .img-text {
     z-index: 9; }
 
+/* Que hago */
+.quehago {
+  height: 90vh; }
+  .quehago .carousel {
+    height: 70vh; }
+    .quehago .carousel .carousel-caption {
+      position: absolute;
+      bottom: auto;
+      top: 0 !important; }
+  .quehago img {
+    width: 100%;
+    filter: saturate(1.5); }
+
 /* Footer */
 .contact {
   background: url("../img/tablas2.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: auto; }
+  height: 90vh;
+  background: #235764; }
   .contact #map {
-    height: 100%;
+    height: 40vh;
     width: 100%;
     min-width: 300px;
     min-height: 300px;
@@ -236,10 +265,14 @@ body {
     text-align: center;
     font-size: 2.2em;
     font-weight: bold; }
+  .contact__hablemos {
+    color: #fff;
+    height: 40vh; }
   .contact__credits {
     color: #fff;
-    font-family: "Poiret One", cursive; }
-  .contact__hablemos {
-    color: #fff; }
+    font-family: "Poiret One", cursive;
+    background: #235764;
+    height: 10vh;
+    padding: 2em; }
 
 /*# sourceMappingURL=style.css.map */
