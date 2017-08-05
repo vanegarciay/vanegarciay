@@ -14,7 +14,7 @@ body {
   margin-top: -10em;
   background-color: #fff;
   position: relative;
-  z-index: 999;
+  z-index: 99;
   border-radius: 0.5em;
   width: 95%;
   max-width: none;
@@ -217,5 +217,18 @@ body {
     filter: brightness(50%); }
   #portafolio .img-hover:hover .img-text {
     z-index: 9; }
+
+/* Footer */
+#contacto {
+  background: url("../img/tablas2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh; }
+
+#map {
+  height: 100%;
+  width: 100%;
+  min-width: 300px;
+  min-height: 300px; }
 
 /*# sourceMappingURL=style.css.map */
