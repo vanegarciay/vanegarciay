@@ -6,14 +6,18 @@
     <!-- Zoom -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio desarrolladora front-end">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="author" content="Vanessa Garcia Yara">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-mobile" aria-expanded="false">
@@ -22,88 +26,316 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Vanessa(Diseñar logo)</a>
+                <a class="navbar-brand navbar__logo" href="#">Vanessa</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="menu-mobile">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Acerca de mí</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">Que hago</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#acerca" class="navbar__item"><i class="fa fa-female" aria-hidden="true"></i> Acerca de mí</a></li>
+                    <li><a href="#skills" class="navbar__item"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Habilidades</a></li>
+                    <li><a href="#portafolio" class="navbar__item"><i class="fa fa-github" aria-hidden="true"></i> Portafolio</a></li>
+                    <li><a href="#quehago" class="navbar__item"><i class="fa fa-universal-access" aria-hidden="true"></i> Que hago</a></li>
+                    <li><a href="#contacto" class="navbar__item"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <!-- Acerca de mí-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-6">
-                        <img src="assets/img/cat-profile (1) - copia.png" class="circle img-responsive">
-                    </div>
-                    <div class="col-md-6">
-                        <h1>Acerca de mí</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ipsum molestiae, assumenda sint cum voluptas impedit dolorem praesentium, enim fuga, vitae qui earum quis. Eius eligendi quis, dicta. Iste, possimus!</p>
-                    </div>
+    <!-- Bienvenida -->
+    <section class="bienvenida">
+        <div id="particles-js">
+            <div class="container">
+                <div class="row">
+                    <h1>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "BIENVENID@.", "Soy desarrolladora web.", "Me gustan los desafios.", "Aportar algo positivo al mundo.", "Y los gatos." ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
                 </div>
             </div>
         </div>
     </section>
     <!-- Acerca de mí-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Habilidades</h1>
-                    <p>Aqui van mis habilidades</p>
+    <div id="contenedor-general">
+        <section id="acerca">
+            <div class="container aboutme">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <img src="assets/img/4.jpg" class="img-circle img-responsive aboutme__foto">
+                        </div>
+                        <div class="col-md-6 aboutme__contain">
+                            <h1 class="aboutme__title">ACERCA DE MÍ</h1>
+                            <div class="separador_izquierdo"><hr><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
+                            <p class="aboutme__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ipsum molestiae, assumenda sint cum voluptas impedit dolorem praesentium, enim fuga, vitae qui earum quis. Eius eligendi quis, dicta. Iste, possimus!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Portafolio-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Portafolio</h1>
-                    <p>Aqui van mi portafolio</p>
+        </section>
+        <!-- Habilidades-->
+        <section class="habilidades" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-7">
+                        <h1 class="habilidades__title">APRENDO CADA DÍA MÁS</h1>
+                        <div class="separador_derecho"><hr><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
+                        <p class="habilidades__subtitle">En un mundo de conocimiento y experiencias infinitas</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 habilidades__skill">
+                        <div class="col-md-6">
+                            <b>
+                              <span1>
+                                <div class="habilidades__single">JAVASCRIPT <i class="devicon-javascript-plain"></i><br /></div>
+                                <div class="habilidades__single">HTML5 <i class="devicon-html5-plain"></i><br /></div>
+                                <div class="habilidades__single">CSS3 <i class="devicon-css3-plain"></i><br /></div>
+                                <div class="habilidades__single">SASS <i class="devicon-sass-original"></i><br /></div>
+                                <div class="habilidades__single">GULP <i class="devicon-gulp-plain"></i><br/></div>
+                                <div class="habilidades__single">JQUERY <i class="devicon-jquery-plain-wordmark"></i><br/></div>
+                                <div class="habilidades__single">GIT <i class="devicon-git-plain"></i><br/></div>
+                                <div class="habilidades__single">GITHUB <i class="devicon-github-plain"></i><br/></div>
+                                <div class="habilidades__single">NODE JS <i class="devicon-nodejs-plain"></i><br/></div>
+                                <div class="habilidades__single">SLACK <i class="devicon-slack-plain"></i><br/></div>
+                                <div class="habilidades__single">TRELLO <i class="devicon-trello-plain-wordmark"></i><br/></div>
+                                <div class="habilidades__single">METODOLOGIAS AGILES</div>
+                                </span1>
+                            </b>
+                        </div>
+                        <div class="col-md-6">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Que hago-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Que hago</h1>
-                    <p>Aqui van mis actividades y lo que me gusta</p>
+        </section>
+        <!-- Conozco de-->
+        <section class="conozco">
+            <div class="container">
+                <div class="row">
+                    <div class="col m12 s12 text-center">
+                        <h2 class="conozco__title">CONOZCO DE</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/gulp.png" class="img-responsive"></p>
+                                <p class="conozco__parrafo">GULP</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/sass.svg" class="img-responsive"></p>
+                                <p class="conozco__parrafo">SASS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/jquery.png" class="img-responsive"></p>
+                                <p class="conozco__parrafo">JQUERY</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/git.png" class="img-responsive"></p>
+                                <p class="conozco__parrafo">GIT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m12 s12 text-center">
+                        <h2 class="conozco__title">MANEJO HERRAMIENTAS Y FRAMEWORKS</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/bootstrap.svg" class="img-responsive"></p>
+                                <p class="conozco__parrafo">BOOTSTRAP</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/materialize.png" class="img-responsive"></p>
+                                <p class="conozco__parrafo">MATERIALIZE</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/slack.png" class="img-responsive"></p>
+                                <p class="conozco__parrafo">SLACK</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/trellologo.png" class="img-responsive"></p>
+                                <p class="conozco__parrafo">TRELLO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-offset-3 col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/scrumjpg.jpg" class="img-responsive"></p>
+                                <p class="conozco__parrafo">SCRUM</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="single_herramienta">
+                                <p><img src="assets/img/github.png" class="img-responsive"></p>
+                                <p class="conozco__parrafo">GITHUB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Portafolio-->
+        <section id="portafolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>PORTAFOLIO</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img-hover col-md-4">
+                        <img src="assets/img/pintereset.png" class="img-responsive">
+                        <p class="img-text">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <a target="_blank" href="https://vanegarciay.github.io/pinterest/">DEMO |</a>
+                            <a target="_blank" href="https://github.com/vanegarciay/pinterest"> CODIGO</a>
+                            <br>
+                            Pinterest
+                        </p>
+                    </div>
+                    <div class="img-hover col-md-4">
+                        <img src="assets/img/portafolio.png" class="img-responsive">
+                        <p class="img-text">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <a target="_blank" href="https://vanegarciay.github.io/portafolio-sass/">DEMO |</a>
+                            <a target="_blank" href="https://github.com/vanegarciay/portafolio-sass"> CODIGO</a>
+                            <br>
+                            Portafolio Sass
+                        </p>
+                    </div>
+                    <div class="img-hover col-md-4">
+                        <img src="assets/img/geolocation.png" class="img-responsive">
+                        <p class="img-text">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <a target="_blank" href="https://vanegarciay.github.io/easy-vreco/">DEMO |</a>
+                            <a target="_blank" href="https://github.com/vanegarciay/easy-vreco"> CODIGO</a>
+                            <br>
+                            Geolocation
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img-hover col-md-6">
+                        <img src="assets/img/trello.png" class="img-responsive">
+                        <p class="img-text">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <a target="_blank" href="https://vanegarciay.github.io/trello-laboratoria/">DEMO |</a>
+                            <a target="_blank" href="https://github.com/vanegarciay/trello-laboratoria"> CODIGO</a>
+                            <br>
+                            Trello
+                        </p>
+                    </div>
+                    <div class="img-hover col-md-6">
+                        <img src="assets/img/lyft.png" class="img-responsive">
+                        <p class="img-text">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <a target="_blank" href="https://github.com/vanegarciay/lyft-flexbox">DEMO |</a>
+                            <a target="_blank" href="https://vanegarciay.github.io/lyft-flexbox/"> CODIGO</a>
+                            <br>
+                            Lyft
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" img-hover col-md-4 design_items">
+                        <img src="assets/img/calculadora.png" class="img-responsive">
+                        <p class="img-text">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <a target="_blank" href="https://vanegarciay.github.io/calculadora_lab/">DEMO |</a>
+                            <a target="_blank" href="https://github.com/vanegarciay/calculadora_lab"> CODIGO</a>
+                            <br>
+                            Calculadora
+                        </p>
+                    </div>
+                    <div class="img-hover col-md-4 design_items">
+                        <img src="assets/img/insta.png" class="img-responsive">
+                        <p class="img-text">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <a target="_blank"
+                            href="https://vanegarciay.github.io/insta-collage/">DEMO |</a>
+                            <a target="_blank"
+                            href="https://github.com/vanegarciay/insta-collage"> CODIGO</a>
+                            <br>
+                            InstaCollage (Drag and Drop)
+                        </p>
+                    </div>
+                    <div class="img-hover col-md-4 design_items">
+                        <img src="assets/img/freelancer.png" class="img-responsive">
+                        <p class="img-text">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <a target="_blank" href="https://vanegarciay.github.io/freelancer-flexbox/">DEMO |</a>
+                            <a target="_blank" href="https://github.com/vanegarciay/freelancer-flexbox"> CODIGO</a>
+                            <br>
+                            Freelancer
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- footer-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Contactame</h1>
-                    <p>Aqui van toda mi informacion de contacto</p>
+        </section>
+        <!-- Que hago-->
+        <section id="quehago">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Que hago</h1>
+                        <p>Aqui van mis actividades y lo que me gusta</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <div class="fixed-rrss">
-        <p>Aqui van los iconos de redes sociales fixed en el barra lateral, linkedin,github, gmail</p>
+        </section>
+        <!-- footer-->
+        <footer id="contacto">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p>Estoy en Santiago de Chile</p>
+                        <!-- Aqui va nuestro mapa -->
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+        <!-- Menu lateral redes sociales-->
+        <div class="fixed-action-btn vertical click-to-toggle">
+            <a class="btn-floating btn-large blue">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating green" target="_blank" href="https://www.linkedin.com/in/vanegarciay/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a class="btn-floating blue" target="_blank" href="https://github.com/vanegarciay"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <!-- Icons -->
     <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+    <!-- Api geolocation key and libraries -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACtfuvxkV5N80n11oi64Q_eIvG463hkYM&callback=map"></script>
 </body>
 </html>

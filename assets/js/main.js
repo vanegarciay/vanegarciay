@@ -62,9 +62,11 @@ $( document ).ready(function() {
 function map() {
     var latitud = -33.4724728;
     var longitud = -70.9100251;
+    var latitudColombia = 4.0645373;
+    var longitudColombia = -81.9850681;
 
     var map = new google.maps.Map(document.getElementById("map"),{
-        zoom: 7,
+        zoom: 2,
         center: {lat: latitud, lng: longitud},
         mapTypeControl: false,
         zoomControl: false,
@@ -72,7 +74,7 @@ function map() {
     });
 
     var icono = {
-        url: 'http://icons.iconarchive.com/icons/aha-soft/perfect-transport/48/Taxi-icon.png',
+        url: 'http://www.myiconfinder.com/uploads/iconsets/256-256-6096188ce806c80cf30dca727fe7c237.png',
         size: new google.maps.Size(71, 71),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(17, 34),
@@ -87,4 +89,5 @@ function map() {
     });
 
     marker.setPosition(new google.maps.LatLng(latitud,longitud));
+    marker.setPosition(new google.maps.LatLng(latitudColombia,longitudColombia));
 }
