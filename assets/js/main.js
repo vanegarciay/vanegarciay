@@ -1,3 +1,6 @@
+/*
+* Tipeo en section de Bienvenida (made by vipul mirajkar thevipulm.appspot.com)
+*/
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -38,7 +41,6 @@ TxtType.prototype.tick = function() {
         that.tick();
     }, delta);
 };
-
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
@@ -55,6 +57,10 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+
+/*
+* Mapa
+*/
 $( document ).ready(function() {
     map();
 });

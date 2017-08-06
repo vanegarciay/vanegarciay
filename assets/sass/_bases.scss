@@ -106,14 +106,14 @@ h2 {
 .typewrite {
     color: $title_color;
     text-decoration: none!important;
-    font-size: 2em;
+    font-size: 3.5em;
     font-weight: bold;
 }
 
 .typewrite:hover {
     color: $subtitle_color;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2.5em;
     transition: font-size 2s;
 }
 
@@ -162,7 +162,7 @@ h2 {
 /* Habilidades */
 
 .habilidades {
-    height: 80vh;
+    height: 90vh;
     background-image: url("../img/paisaje.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -181,15 +181,17 @@ h2 {
     }
 
     &__skill {
+        text-align: center;
 
         b {
             float: left;
             overflow: hidden;
             position: relative;
-            height: 50px;
+            height: 100px;
+            width: 100%;
         }
 
-        span1 {
+        span {
             display: inline-block;
             color: $title_color;
             position: relative;
@@ -203,16 +205,14 @@ h2 {
 
         @keyframes move {
             0% { top: 0px; }
-            20% { top: -50px; }
-            40% { top: -100px; }
-            60% { top: -150px; }
-            80% { top: -200px; }
+            20% { top: -100px; }
+            40% { top: -200px; }
         }
     }
 
     &__single {
-        font-size: 4em;
-        margin-left: 8em;
+        font-size: 5em;
+        height: 100px;
     }
 }
 
@@ -238,7 +238,14 @@ h2 {
     }
 
     .single_herramienta {
-        width: 50%;
+        padding: 5%;
+        height: 40vh;
+        position: relative;
+
+        img {
+            height: 15vh;
+            width: auto;
+        }
     }
 }
 

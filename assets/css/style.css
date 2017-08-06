@@ -85,13 +85,13 @@ h2 {
 .typewrite {
   color: #235764;
   text-decoration: none !important;
-  font-size: 2em;
+  font-size: 3.5em;
   font-weight: bold; }
 
 .typewrite:hover {
   color: #40D9BD;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.5em;
   transition: font-size 2s; }
 
 /*About*/
@@ -128,7 +128,7 @@ h2 {
 
 /* Habilidades */
 .habilidades {
-  height: 80vh;
+  height: 90vh;
   background-image: url("../img/paisaje.jpg");
   background-size: cover;
   background-attachment: fixed; }
@@ -141,35 +141,34 @@ h2 {
     font-family: "Poiret One", cursive;
     font-size: 1.3em;
     font-weight: bold; }
-  .habilidades__skill b {
-    float: left;
-    overflow: hidden;
-    position: relative;
-    height: 50px; }
-  .habilidades__skill span1 {
-    display: inline-block;
-    color: #235764;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-    -webkit-animation: move 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 1s; }
+  .habilidades__skill {
+    text-align: center; }
+    .habilidades__skill b {
+      float: left;
+      overflow: hidden;
+      position: relative;
+      height: 100px;
+      width: 100%; }
+    .habilidades__skill span {
+      display: inline-block;
+      color: #235764;
+      position: relative;
+      white-space: nowrap;
+      top: 0;
+      left: 0;
+      -webkit-animation: move 5s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-delay: 1s; }
 @keyframes move {
   0% {
     top: 0px; }
   20% {
-    top: -50px; }
-  40% {
     top: -100px; }
-  60% {
-    top: -150px; }
-  80% {
+  40% {
     top: -200px; } }
   .habilidades__single {
-    font-size: 4em;
-    margin-left: 8em; }
+    font-size: 5em;
+    height: 100px; }
 
 /* Conozco de */
 .conozco {
@@ -186,7 +185,12 @@ h2 {
     font-size: 1.3em;
     padding: 1em; }
   .conozco .single_herramienta {
-    width: 50%; }
+    padding: 5%;
+    height: 40vh;
+    position: relative; }
+    .conozco .single_herramienta img {
+      height: 15vh;
+      width: auto; }
 
 /* Portafolio */
 #portafolio {
@@ -274,5 +278,29 @@ h2 {
     background: #235764;
     height: 10vh;
     padding: 2em; }
+
+@media (max-width: 600px) {
+  a.typewrite {
+    font-size: 1.2em;
+    color: #fff; }
+
+  .bienvenida {
+    height: 50vh;
+    background-position: right; }
+
+  .habilidades, .habilidades__title, .separador_derecho hr {
+    color: #fff; }
+
+  .habilidades__single {
+    font-size: 2em;
+    color: #fff; }
+
+  .quehago {
+    height: 40vh; }
+    .quehago .carousel {
+      height: 30vh; }
+
+  .conozco__title {
+    font-size: 1em; } }
 
 /*# sourceMappingURL=style.css.map */

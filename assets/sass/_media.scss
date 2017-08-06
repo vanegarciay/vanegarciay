@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+    a.typewrite {
+        font-size: 1.2em;
+        color: #fff;
+    }
+
+    .bienvenida {
+        height: 50vh;
+        background-position: right;
+    }
+
+    .habilidades, .habilidades__title, .separador_derecho hr {
+        color: #fff;
+    }
+
+    .habilidades__single {
+        font-size: 2em;
+        color: #fff;
+    }
+
+    .quehago {
+        height: 40vh;
+
+        .carousel {
+            height: 30vh;
+        }
+    }
+
+    .conozco__title {
+        font-size: 1em;
+    }
+
+}
