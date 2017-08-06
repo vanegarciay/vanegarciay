@@ -109,7 +109,7 @@ function map() {
 }
 
 // Scrollspy
-$('body').scrollspy({ target: '.navbar' });
+$('body').scrollspy({ target: '.navbar', offset: 100 });
 
 /*
  * Scroll variations
@@ -123,4 +123,24 @@ $(window).scroll(function() {
     } else {
         $(".navbar").addClass('navbar--transparent');
     }
+});
+
+$(".navbar__item").on("click", function(event){
+    var destino = $(this.getAttribute('href'));
+
+    if( destino.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: destino.offset().top-50
+        }, 1000);
+    }
+    
+    /* ANIMACIÓN DE SECCIONES */
+    var section = destino[0].id;
+    $("#"+section).fadeOut();
+    $("#"+section).fadeIn("slow");
+    /*$("#"+section).slideUp();
+    $("#"+section).slideDown();*/
+    /*$("#"+section).animate({opacity: '0.5'});
+    $("#"+section).animate({opacity: '1'});*/
 });

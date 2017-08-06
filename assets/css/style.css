@@ -11,7 +11,8 @@ body {
 
 h2 {
   padding: 1em;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  font-weight: bold; }
 
 /* Contenedor General*/
 #contenedor-general {
@@ -52,23 +53,38 @@ h2 {
   .navbar-default .navbar-brand {
     color: #40D9BD;
     font-weight: bold; }
-  .navbar-default #menu-mobile ul li a {
-    color: #40D9BD;
-    font-weight: bold;
-    font-size: 1.2em; }
 
 .navbar {
   font-family: "Raleway", sans-serif;
-  border-bottom: none; }
+  border-bottom: none;
+  transition: all 1.2s;
+  height: auto; }
+  .navbar li {
+    padding: 0;
+    margin: 0; }
   .navbar__logo {
     font-family: 'Londrina Shadow', cursive;
     font-size: 2.5em; }
+  .navbar__item {
+    color: #40D9BD;
+    font-weight: bold;
+    font-size: 1.2em;
+    height: auto; }
+  .navbar__item:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important; }
+  .navbar__item i {
+    height: auto; }
   .navbar--transparent {
     background: transparent !important;
     box-shadow: none;
-    transition: 1s; }
+    transition: all 1.2s; }
   .navbar--transparent a {
     color: #235764 !important; }
+  .navbar-toggle {
+    background-color: rgba(255, 255, 255, 0.4); }
+  .navbar .navbar-collapse.collapse.in li {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); }
 
 /*bienvenida*/
 .bienvenida {
@@ -98,22 +114,9 @@ h2 {
 .aboutme {
   margin-top: 6em; }
   .aboutme__foto {
-    /*width: 40%;
-    border: 4px solid $lila;
-    */
-    /*margin: 2em;
-    width: 20em;
-    margin-left: 8em;
-    height: 25em;
-    background-color: $title_color;
-    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-position: right top;*/
-    height: 30%;
-    width: 30%;
-    margin: 30px;
-    margin-left: 10em; }
+    width: 90%;
+    max-width: 40vh;
+    margin: 1em auto; }
   .aboutme__title {
     color: #40D9BD;
     font-family: "Raleway", sans-serif;
@@ -123,8 +126,6 @@ h2 {
     font-weight: bold;
     font-size: 1.2em;
     text-align: justify; }
-  .aboutme__contain {
-    padding: 4em 5em 4em 0; }
 
 /* Habilidades */
 .habilidades {
@@ -134,9 +135,7 @@ h2 {
   background-attachment: fixed; }
   .habilidades__title {
     color: #235764;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    font-size: 2em; }
+    font-family: "Raleway", sans-serif; }
   .habilidades__subtitle {
     font-family: "Poiret One", cursive;
     font-size: 1.3em;
@@ -168,29 +167,34 @@ h2 {
     top: -200px; } }
   .habilidades__single {
     font-size: 5em;
-    height: 100px; }
+    height: 100px;
+    text-shadow: 0 0 0.5em #eee; }
 
 /* Conozco de */
-.conozco {
-  padding: 2em; }
-  .conozco__title {
-    font-family: "Raleway", sans-serif;
-    color: #40D9BD;
-    font-size: 2.5em;
-    font-weight: bold;
-    padding: 1.5em; }
-  .conozco__parrafo {
-    font-family: "Poiret One", cursive;
-    font-weight: bold;
-    font-size: 1.3em;
-    padding: 1em; }
-  .conozco .single_herramienta {
-    padding: 5%;
-    height: 40vh;
-    position: relative; }
-    .conozco .single_herramienta img {
-      height: 15vh;
-      width: auto; }
+.conozco__title {
+  font-family: "Raleway", sans-serif;
+  color: #40D9BD; }
+.conozco__parrafo {
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1em; }
+.conozco .single_herramienta {
+  padding: 5%;
+  height: 40vh;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle; }
+  .conozco .single_herramienta img {
+    height: 15vh;
+    width: auto;
+    max-width: 100%; }
+  .conozco .single_herramienta:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.3);
+    border-radius: 35%;
+    filter: saturate(2);
+    transition: all 0.3s; }
 
 /* Portafolio */
 #portafolio {
@@ -238,17 +242,16 @@ h2 {
     z-index: 9; }
 
 /* Que hago */
-.quehago {
-  height: 90vh; }
-  .quehago .carousel {
-    height: 70vh; }
-    .quehago .carousel .carousel-caption {
-      position: absolute;
-      bottom: auto;
-      top: 0 !important; }
-  .quehago img {
-    width: 100%;
-    filter: saturate(1.5); }
+#quehago .carousel {
+  border-radius: 0.5em;
+  height: 70vh; }
+  #quehago .carousel .carousel-caption {
+    position: absolute;
+    bottom: auto;
+    top: 0 !important; }
+#quehago img {
+  width: 100%;
+  filter: saturate(1.5); }
 
 /* Footer */
 .contact {
@@ -279,6 +282,13 @@ h2 {
     height: 10vh;
     padding: 2em; }
 
+/* Animacion */
+#acerca, #contacto, #skills, #portafolio, #quehago {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
 @media (max-width: 600px) {
   a.typewrite {
     font-size: 1.2em;
@@ -295,12 +305,7 @@ h2 {
     font-size: 2em;
     color: #fff; }
 
-  .quehago {
-    height: 40vh; }
-    .quehago .carousel {
-      height: 30vh; }
-
-  .conozco__title {
-    font-size: 1em; } }
+  #quehago .carousel {
+    height: 30vh; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,6 +11,7 @@ body {
 h2 {
     padding: 1em;
     font-family: $tipografia_title;
+    font-weight: bold;
 }
 
 /* Contenedor General*/
@@ -61,31 +62,56 @@ h2 {
         color: $subtitle_color;
         font-weight: $negrita;
     }
-
-    #menu-mobile ul li a {
-        color: $subtitle_color;
-        font-weight: $negrita;
-        font-size: 1.2em;
-    }
 }
 
 .navbar{
     font-family: $tipografia_title;
     border-bottom: $nothing;
+    transition: all 1.2s;
+    height: auto;
+
+    li {
+        padding: 0;
+        margin: 0;
+    }
 
     &__logo {
         font-family: 'Londrina Shadow', cursive;
         font-size: 2.5em;
     }
 
+    &__item {
+        color: $subtitle_color;
+        font-weight: $negrita;
+        font-size: 1.2em;
+        height: auto;
+    }
+
+    &__item:hover {
+        background-color: rgba(0,0,0,0.1) !important;
+    }
+
+    &__item i {
+        height: auto;
+    }
+
     &--transparent {
         background: transparent !important;
         box-shadow: none;
-        transition: 1s;
+        transition: all 1.2s;
     }
     
     &--transparent a {
         color: $title_color !important;
+    }
+
+    &-toggle {
+        background-color: rgba(255,255,255,0.4);
+    }
+
+    .navbar-collapse.collapse.in li {
+        width: 100%;
+        background-color: rgba(255,255,255,0.9);
     }
 }
 
@@ -123,22 +149,9 @@ h2 {
     margin-top: 6em;
 
     &__foto {
-        /*width: 40%;
-        border: 4px solid $lila;
-        */
-        /*margin: 2em;
-        width: 20em;
-        margin-left: 8em;
-        height: 25em;
-        background-color: $title_color;
-        -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-        -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-        background-position: right top;*/
-        height: 30%;
-        width: 30%;
-        margin: 30px;
-        margin-left: 10em;
+        width: 90%;
+        max-width: 40vh;
+        margin: 1em auto;
     }
 
     &__title {
@@ -153,10 +166,6 @@ h2 {
         font-size: 1.2em;
         text-align: justify;
     }
-
-    &__contain {
-        padding: 4em 5em 4em 0;
-    }
 }
 
 /* Habilidades */
@@ -170,8 +179,6 @@ h2 {
     &__title {
         color: $title_color;
         font-family: $tipografia_title;
-        font-weight: $negrita;
-        font-size: 2em;
     }
 
     &__subtitle {
@@ -213,6 +220,7 @@ h2 {
     &__single {
         font-size: 5em;
         height: 100px;
+        text-shadow: 0 0 0.5em #eee;
     }
 }
 
@@ -220,14 +228,9 @@ h2 {
 
 .conozco {
 
-    padding: 2em;
-
     &__title {
         font-family: $tipografia_title;
         color: $subtitle_color;
-        font-size: 2.5em;
-        font-weight: bold;
-        padding: 1.5em;
     }
 
     &__parrafo {
@@ -241,10 +244,21 @@ h2 {
         padding: 5%;
         height: 40vh;
         position: relative;
+        display: table-cell;
+        vertical-align: middle;
 
         img {
             height: 15vh;
             width: auto;
+            max-width: 100%;
+        }
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transform: scale(1.3);
+            border-radius: 35%;
+            filter: saturate(2);
+            transition: all 0.3s;
         }
     }
 }
@@ -312,10 +326,10 @@ h2 {
 
 /* Que hago */
 
-.quehago {
-    height: 90vh;
+#quehago {
 
     .carousel {
+        border-radius: 0.5em;
         height: 70vh;
 
         .carousel-caption {
@@ -370,3 +384,8 @@ h2 {
     }
 }
 
+/* Animacion */
+
+#acerca, #contacto , #skills, #portafolio , #quehago {
+    @include animation();
+}
