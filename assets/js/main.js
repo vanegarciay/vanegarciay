@@ -41,6 +41,7 @@ TxtType.prototype.tick = function() {
         that.tick();
     }, delta);
 };
+
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
@@ -75,8 +76,8 @@ function map() {
     var longitudColombia = -74.2478955;
 
     var map = new google.maps.Map(document.getElementById("map"),{
-        zoom: 2,
-        center: {lat: latitud, lng: longitud},
+        zoom: 3,
+        center: {lat: -12.7740499, lng: -38.7420562},
         mapTypeControl: false,
         zoomControl: false,
         streetViewControl:false

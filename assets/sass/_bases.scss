@@ -123,27 +123,35 @@ h2 {
     background-size: cover;
     filter: grayscale(70%);
     margin-top: -20px;
-    text-align: center;
+    text-align: left;
     padding-top:10em;
-    font-family: 'Archivo Black', sans-serif;
+    padding-bottom:10em;
+    font-family: 'Share Tech Mono', monospace;
     z-index: 1;
+    display: flex;
+    align-items: center;
 }
 
 .typewrite {
-    color: $title_color;
+    color: #fff;
     text-decoration: none!important;
     font-size: 3.5em;
     font-weight: bold;
+    text-shadow: 0 0 0.1em #000;
 }
 
 .typewrite:hover {
-    color: $subtitle_color;
-    font-weight: bold;
-    font-size: 2.5em;
-    transition: font-size 2s;
+    color: #fff;
+    text-shadow: 0 0 1em #000;
+    transition: all 2s;
 }
 
 /*About*/
+
+#acerca {
+    background-color: #eee;
+    border-radius: 0.5em 0.5em 0 0;
+}
 
 .aboutme {
     margin-top: 6em;
@@ -152,6 +160,7 @@ h2 {
         width: 90%;
         max-width: 40vh;
         margin: 1em auto;
+        border-radius: 1em;
     }
 
     &__title {
@@ -161,66 +170,9 @@ h2 {
     }
 
     &__parrafo {
-        font-family: $tipografia_contenido;
-        font-weight: bold;
+        font-family: $tipografia_title;
         font-size: 1.2em;
         text-align: justify;
-    }
-}
-
-/* Habilidades */
-
-.habilidades {
-    height: 90vh;
-    background-image: url("../img/paisaje.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-
-    &__title {
-        color: $title_color;
-        font-family: $tipografia_title;
-    }
-
-    &__subtitle {
-        font-family: $tipografia_contenido;
-        font-size: 1.3em;
-        font-weight: bold;
-    }
-
-    &__skill {
-        text-align: center;
-
-        b {
-            float: left;
-            overflow: hidden;
-            position: relative;
-            height: 100px;
-            width: 100%;
-        }
-
-        span {
-            display: inline-block;
-            color: $title_color;
-            position: relative;
-            white-space: nowrap;
-            top: 0;
-            left: 0;
-            -webkit-animation: move 5s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-delay: 1s;
-        }
-
-        @keyframes move {
-            0% { top: 0px; }
-            20% { top: -100px; }
-            40% { top: -200px; }
-        }
-    }
-
-    &__single {
-        font-size: 5em;
-        height: 100px;
-        text-shadow: 0 0 0.5em #eee;
     }
 }
 
@@ -246,6 +198,7 @@ h2 {
         position: relative;
         display: table-cell;
         vertical-align: middle;
+        transition: all 0.7s;
 
         img {
             height: 15vh;
@@ -254,11 +207,9 @@ h2 {
         }
 
         &:hover {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transform: scale(1.3);
-            border-radius: 35%;
+            transform: scale(1.05);
             filter: saturate(2);
-            transition: all 0.3s;
+            transition: all 0.7s;
         }
     }
 }
@@ -322,15 +273,19 @@ h2 {
     .img-hover:hover .img-text {
         z-index: 9;
     }
+
+    .img-hover:hover a {
+        text-decoration: none;
+    }
 }
 
 /* Que hago */
 
 #quehago {
-
+    padding-bottom: 3em;
     .carousel {
         border-radius: 0.5em;
-        height: 70vh;
+        height: 60vh;
 
         .carousel-caption {
             position: absolute;
@@ -345,21 +300,20 @@ h2 {
     }
 }
 
-/* Footer */
+/* Footer section*/
 
 .contact {
-    background: url("../img/tablas2.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    height: 90vh;
-    background: $title_color;
+    position: relative;
+    height: 60vh;
 
     #map {
-        height: 40vh;
+        height: 60vh;
         width: 100%;
         min-width: 300px;
         min-height: 300px;
         repeat: no-repeat;
+        position: absolute;
+        border-radius: 0 0 1em 1em;
     }
 
     &__icon , &__parrafo {
@@ -373,15 +327,29 @@ h2 {
     &__hablemos {
         color: #fff;
         height: 40vh;
+        padding-top: 1em;
+        position: relative;
     }
 
-    &__credits {
+    &__details {
+        background: rgba(0,0,0,0.5);
+        padding-bottom: 2em;
+    }
+
+    &__title {
+        font-family: $tipografia_contenido;
+        color: $subtitle_color;
+        font-weight: bold;
+    }
+}
+
+.footer {
         color: #fff;
         font-family: $tipografia_contenido;
         background: $title_color;
-        height: 10vh;
+        height: 5vh;
         padding: 2em;
-    }
+        position: relative;
 }
 
 /* Animacion */
