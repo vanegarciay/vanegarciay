@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
-@import url("https://fonts.googleapis.com/css?family=Londrina+Shadow");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One|Raleway");
 * {
@@ -64,8 +63,9 @@ h2 {
     padding: 0;
     margin: 0; }
   .navbar__logo {
-    font-family: 'Londrina Shadow', cursive;
-    font-size: 2.5em; }
+    font-family: 'Monsieur La Doulaise', cursive;
+    text-shadow: 0 0 0.5em #fff;
+    font-size: 3em; }
   .navbar__item {
     color: #40D9BD;
     font-weight: bold;
