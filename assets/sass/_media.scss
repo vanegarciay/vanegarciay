@@ -24,4 +24,19 @@
         }
     }
 
+    .conozco {
+        &__parrafo {
+            font-size: 0.8em;
+            padding: 0.1em;
+        }
+
+        .single_herramienta {
+            height: 12vh;
+
+            img {
+                height: 5vh;
+            }
+        }
+    }
+
 }

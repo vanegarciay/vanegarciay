@@ -284,6 +284,14 @@ h2 {
     color: #fff; }
 
   #quehago .carousel {
-    height: 30vh; } }
+    height: 30vh; }
 
-/*# sourceMappingURL=style.css.map */
+  .conozco__parrafo {
+    font-size: 0.8em;
+    padding: 0.1em; }
+  .conozco .single_herramienta {
+    height: 12vh; }
+    .conozco .single_herramienta img {
+      height: 5vh; } }
+
+/*# sourceMappingURL=main.css.map */
